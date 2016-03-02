@@ -12,3 +12,5 @@ ii <- data.frame(matrix(aperm(iris3, c(1,3,2)), ncol = 4,
 all.equal(ii, iris) # TRUE
 
 
+plot_ly(data = iris, x = Sepal.Length, y = Petal.Length, mode = "markers",
+        color = Species)
